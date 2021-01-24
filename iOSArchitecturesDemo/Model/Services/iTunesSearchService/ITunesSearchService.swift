@@ -62,6 +62,7 @@ final class ITunesSearchService {
     }
     
     public func getSongs(forQuery query: String, completion: CompletionSongs?) {
+        
         let regionCode = Locale.current.regionCode ?? defaultRegionCode
         var parameters: Parameters = [:]
         parameters[Parameter.query] = query
